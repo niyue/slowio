@@ -1,0 +1,15 @@
+[global]
+bs=4K
+iodepth=256
+direct=1
+ioengine=libaio
+group_reporting
+time_based
+runtime=120
+numjobs=4
+name=raw-read
+rw=read
+directory=/tmp/data
+							
+[job1]
+size=64M
